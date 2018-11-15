@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface KundeRepository extends CrudRepository<Kunde, Long> {
     List<Kunde> findAll();
+    List<Kunde> findByAutosFarbe(String farbe);
 }
